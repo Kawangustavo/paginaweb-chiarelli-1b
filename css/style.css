@@ -47,7 +47,8 @@ nav {
 
 }
 
-.prevSlide,.nextSlide {
+.prevSlide,
+.nextSlide {
     opacity: 50%;
     transition: 750ms ease-out;
 }
@@ -74,13 +75,13 @@ nav {
     transition: 450ms;
 }
 
-#arrow-prev:hover{
+#arrow-prev:hover {
     opacity: 100%;
     width: 6%;
     transition: 450ms ease-out;
 }
 
-#arrow-next:hover{
+#arrow-next:hover {
     opacity: 100%;
     width: 6%;
     transition: 450ms ease-out;
@@ -88,14 +89,14 @@ nav {
 
 .container {
     position: relative;
-  }
-  
-  #image {
+}
+
+#image {
     position: absolute;
     width: 100%;
-  }
-  
-  #texto {
+}
+
+#texto {
     position: absolute;
     font-size: 5vw;
     color: #fff;
@@ -105,13 +106,13 @@ nav {
     left: 67%;
     bottom: -46vmax;
     transition: 500ms all;
-  }
+}
 
-  #texto:hover {
+#texto:hover {
     font-size: 5.5vw;
     transition: 500ms all;
     background-color: #00aeef;
-  }
+}
 
 h2 {
     font-size: 10vw;
