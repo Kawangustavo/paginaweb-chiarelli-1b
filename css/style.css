@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Barra de navegação */
 nav ul li {
     list-style: none;
     display: flex;
@@ -19,7 +20,9 @@ nav {
     background-color: green;
 }
 
+/*Fim da barra*/
 
+/*Vídeo*/
 .back {
     width: 100%;
 }
@@ -29,6 +32,9 @@ nav {
     text-align: center;
 }
 
+/*Fim do vídeo*/
+
+/*Slides*/
 .slides {
     position: relative;
     width: 100%;
@@ -87,6 +93,9 @@ nav {
     transition: 450ms ease-out;
 }
 
+/*Fim dos slides*/
+
+/*Banner vegano*/
 .container {
     position: relative;
 }
@@ -113,6 +122,8 @@ nav {
     transition: 500ms all;
     background-color: #00aeef;
 }
+
+/*Fim do banner vegano*/
 
 h2 {
     font-size: 10vw;
