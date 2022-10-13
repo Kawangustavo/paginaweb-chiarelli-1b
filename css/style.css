@@ -1,66 +1,80 @@
 body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/*Barra de navegação */
-nav ul li {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /*Barra de navegação */
+  nav ul li {
     list-style: none;
     display: flex;
-    float: right;
-    padding: 2.5em;
-}
-
-nav {
+    text-align: center;
+    color: #fff;
+    float: left;
+  }
+  
+  nav {
     width: 100%;
     height: 8vmax;
-    position: fixed;dracula
-}
-
-.cor-menu {
-    background-color: rgb(0,99,92,0.4);
-    z-index: 2;
-}
-
-/*Fim da barra*/
-
-/*Vídeo*/
-.back {
+    position: fixed;
+    transition: 250ms ease-out;
+    z-index: 5;
+  }
+  
+  nav img {
+    width: 10%;
+    margin: -17px auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .cor-menu {
+    background-color: rgb(0, 99, 92, 0.8);
+    transition: 250ms ease-in;
+  }
+  
+  /*Fim da barra*/
+  
+  /*Vídeo*/
+  .back {
     width: 100%;
-}
-
-.back p {
+  }
+  
+  .back p {
     font-size: 100px;
     text-align: center;
-}
-
-/*Fim do vídeo*/
-
-/*Slides*/
-.slides {
+  }
+  
+  /*Fim do vídeo*/
+  
+  .separador {
+    border-top: 5px solid #c1cfda;
+  }
+  
+  /*Slides*/
+  .slides {
     position: relative;
     width: 100%;
-}
-
-.slick-center {
+  }
+  
+  .slick-center {
     position: relative;
     transition: 450ms ease-in;
-}
-
-.slick-now {
+  }
+  
+  .slick-now {
     background-image: url("/img/fundo.png");
     filter: drop-shadow(5px 5px 5px);
     background-size: 90%;
     background-repeat: no-repeat;
-
-}
-
-.prevSlide,
-.nextSlide {
+    cursor: pointer;
+  }
+  
+  .prevSlide,
+  .nextSlide {
     opacity: 50%;
     transition: 750ms ease-out;
-}
-
-#arrow-prev {
+  }
+  
+  #arrow-prev {
     width: 5%;
     margin: 10% 0 0 0;
     position: absolute;
@@ -69,9 +83,9 @@ nav {
     transform: rotate(180deg);
     opacity: 60%;
     transition: 450ms ease-in;
-}
-
-#arrow-next {
+  }
+  
+  #arrow-next {
     width: 5%;
     margin: 10% 0 0 0;
     position: absolute;
@@ -80,53 +94,99 @@ nav {
     cursor: pointer;
     opacity: 60%;
     transition: 450ms;
-}
-
-#arrow-prev:hover {
+  }
+  
+  #arrow-prev:hover {
     opacity: 100%;
     width: 6%;
     transition: 450ms ease-out;
-}
-
-#arrow-next:hover {
+  }
+  
+  #arrow-next:hover {
     opacity: 100%;
     width: 6%;
     transition: 450ms ease-out;
-}
-
-/*Fim dos slides*/
-
-/*Banner vegano*/
-.container {
+  }
+  
+  /*Fim dos slides*/
+  
+  /*Banner vegano*/
+  .container {
     position: relative;
-}
-
-#image {
+  }
+  
+  #image {
     position: absolute;
     width: 100%;
-}
-
-#texto {
+  }
+  
+  #texto {
     position: absolute;
     font-size: 5vw;
     color: #fff;
-    background-color: #00635C;
+    background-color: #00635c;
     padding: 1vmax;
     border-radius: 10px;
     left: 67%;
     bottom: -46vmax;
     transition: 500ms all;
-}
-
-#texto:hover {
+    cursor: pointer;
+  }
+  
+  #texto:hover {
     font-size: 5.5vw;
     transition: 500ms all;
     background-color: #00aeef;
-}
-
-/*Fim do banner vegano*/
-
-h2 {
-    font-size: 10vw;
+  }
+  
+  /*Fim do banner vegano*/
+  
+  .gluten p {
+    font-size: 8vw;
+    text-align: center;
+    top: 58vmax;
     position: relative;
-}
+  }
+  
+  article {
+    display: flex;
+    position: absolute;
+    top: 148vmax;
+  }
+  
+  article img {
+    width: 30%;
+    padding: 1em;
+    display: block;
+    margin: 0 auto;
+    background-color: #e8e9eb;
+    border-radius: 30px;
+    transition: 450ms ease-in;
+    cursor: pointer;
+  }
+  
+  article img:hover {
+    box-shadow: 5px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    transition: 450ms ease;
+  }
+  
+  .teste {
+    position: relative;
+    font-size: 2em;
+    background-image: url("/img/fundo-semtexto.png");
+    background-size: cover;
+  }
+  
+  footer {
+      position: absolute;
+      width: 100%;
+      top: 180vmax;
+      height: 10vmax;
+      background-color: #333333;
+  }
+  
+  footer img {
+      display: block;
+      margin: 0 auto;
+      width: 9%;
+  }

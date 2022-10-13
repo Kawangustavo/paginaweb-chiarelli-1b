@@ -1,4 +1,3 @@
-//Mudar cor do menu
 jQuery(function ($) {
   var $navbar = $("nav");
   $(window).scroll(function (event) {
@@ -11,7 +10,6 @@ jQuery(function ($) {
   });
 });
 
-//Script base dos slides
 $(".slides").slick({
   centerMode: true,
   centerPadding: "60px",
@@ -40,7 +38,6 @@ $(".slides").slick({
   ],
 });
 
-//Seletor do slide do meio
 $(".slides").on(
   "beforeChange",
   function (event, { slideCount: count }, currentSlide, nextSlide) {
@@ -54,7 +51,6 @@ $(".slides").on(
 
 $('[data-slick-index="0"]').addClass("slick-now");
 
-//Seletor dos slides anteriores
 $(".slides")
   .on("afterChange init", function (event, slick, direction) {
     // console.log('afterChange/init', event, slick, slick.$slides);
@@ -77,3 +73,48 @@ $(".slides")
     // remove all prev/next
     slick.$slides.removeClass("prevSlide").removeClass("nextSlide");
   });
+
+$(function () {
+  var funcao = $("#glutenimg");
+  $("#glutenimg").hover(
+    function () {
+      //Ao posicionar o cursor sobre a div
+      funcao.addClass("teste");
+      console.log("ola mundo");
+    },
+    function () {
+      //Ao remover o cursor da div
+      funcao.removeClass("teste");
+    }
+  );
+});
+
+$(function () {
+  var funcao = $("#glutenimg3");
+  $("#glutenimg3").hover(
+    function () {
+      //Ao posicionar o cursor sobre a div
+      funcao.addClass("teste");
+      console.log("ola mundo");
+    },
+    function () {
+      //Ao remover o cursor da div
+      funcao.removeClass("teste");
+    }
+  );
+});
+
+$(function () {
+  var funcao = $("#glutenimg2");
+  $("#glutenimg2").hover(
+    function () {
+      //Ao posicionar o cursor sobre a div
+      funcao.addClass("teste");
+      console.log("ola mundo");
+    },
+    function () {
+      //Ao remover o cursor da div
+      funcao.removeClass("teste");
+    }
+  );
+});
