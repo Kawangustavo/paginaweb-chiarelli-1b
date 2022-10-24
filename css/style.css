@@ -91,7 +91,7 @@ nav #logo-home {
 }
 
 .slick-now {
-  background-image: url(../img/fundo.png);
+  background-image: url(/img/fundo.png);
   filter: drop-shadow(5px 5px 5px);
   background-size: 90%;
   background-repeat: no-repeat;
