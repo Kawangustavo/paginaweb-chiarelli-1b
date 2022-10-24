@@ -204,7 +204,7 @@ article img:hover {
 .teste {
   position: relative;
   font-size: 2em;
-  background-image: url("/img/fundo-semtexto.png");
+  background-image: url("../img/fundo-semtexto.png");
   background-size: cover;
 }
 
